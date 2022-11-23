@@ -1,0 +1,19 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+//zona de busqueda directa para angelcaamal.com
+zone "angelcaamal.com"{
+	type master;
+	file "/etc/bind/zonas/db.angelcaamal.com";
+};
+//Zona de busqueda inversa para 192.168.57.153/24
+zone "57.168.192.in-addr.arpa"{
+        type master;
+        file "/etc/bind/zonas/db.192.168.57";
+};
+
