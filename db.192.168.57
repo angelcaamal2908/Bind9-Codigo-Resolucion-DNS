@@ -1,0 +1,17 @@
+; Fichero db.192.168.1
+$TTL 7D
+@                           IN      SOA     ns1.angelcaamal.com. administrador.angelcaamal.com. (
+                        2020011301      ; Serial    
+                            604800      ; Refresh (7 días)
+                             86400      ; Retry (24 horas)
+                           2419200      ; Expire (28 días)
+                             10800 )    ; Negative cache TTL (3 horas)
+ 
+; Servidores DNS del dominio
+                            IN      NS      ns1.angelcaamal.com.
+ 
+; Hosts
+153                          IN      PTR     ns1.angelcaamal.com.
+100.57.168.192.in-addr.arpa. IN      PTR     mipagina.angelcaamal.com.
+101                          IN      PTR     miservidorftp.angelcaamal.com.
+102                          IN      PTR     miservidorcorreo.angelcaamal.com.
